@@ -1,0 +1,14 @@
+<%@ page pageEncoding="utf-8" trimDirectiveWhitespaces="true" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<fmt:setBundle basename="messages"/>
+</div></div></div>
+<div class="footer">
+  Verwendet quelloffene <a href="https://github.com/shred/flufftron">flufftron</a>-Technologie
+  von Richard "Shred" Körber. &ndash;
+  <a href="<c:url value="/imprint.jsp"/>">Impressum</a><br />
+  Dies ist kein offizieller Webauftritt der Piratenpartei.
+  Die Aussagen in den Tweets sind die persönlichen Meinungen der jeweiligen Autoren.
+</div></div>
+</body>
+</html>

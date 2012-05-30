@@ -1,0 +1,16 @@
+<%@ page pageEncoding="utf-8" trimDirectiveWhitespaces="true" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<fmt:setBundle basename="messages"/>
+<div class="fluff">
+  <div class="fluffBody"><c:out value="${fluff.text}"/></div>
+  <div class="fluffCaption">
+    <span class="fluffDate">
+      <fmt:formatDate value="${fluff.created}" type="both" dateStyle="full"/>
+    </span>
+    <a href="<c:url value="https://twitter.com/${fluff.from}/status/${fluff.twitId}"/>" rel="nofollow">@<c:out value="${fluff.from}"/></a>
+    flauschte
+    <a href="<c:url value="/fluffy/for/${persons[fluff.personId].nick}.html"/>"><c:out value="${persons[fluff.personId].name}"/></a>
+  </div>
+</div>

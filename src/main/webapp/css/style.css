@@ -1,0 +1,168 @@
+
+body {
+    background: url("../img/bg.jpg");
+    font-size: 1em;
+    font-family: "bitstream vera sans", helvetica, arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    margin: 0px;
+}
+
+.outside {
+    border: 2px solid #000000;
+    background-color: #ffffff;
+    margin: 5px 100px;
+}
+
+.logo {
+    position: relative;
+    background: url("../img/piraten.png") no-repeat;
+    height: 64px;
+    margin: 10px;
+    padding-left: 80px;
+}
+
+.beta {
+    background: url("../img/beta.png") no-repeat;
+    position: absolute;
+    top: -4px;
+    left: 330px;
+    width: 64px;
+    height: 64px;
+    opacity: .7;
+}
+
+.logoTop {
+    font-size: 200%;
+    font-style: italic;
+    font-stretch: 130%;
+    text-shadow: -1px -1px #ff8800, 1px -1px #ff8800, -1px 1px #ff8800, 1px 1px #ff8800;
+}
+
+.logoBottom {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.frame {
+    clear: both;
+    display: table;
+    table-layout: fixed;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0px;
+}
+
+.framecontent {
+    display: table-row;
+}
+
+.menu {
+    display: table-cell;
+    vertical-align: top;
+    position: relative;
+    width: 150px;
+    margin: 0px;
+    padding: 10px 0px;
+}
+
+.menu ul {
+    position: relative;
+    left: -2px;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu li a {
+    display: inline-block;
+    padding: 8pt 6pt;
+    color: #000000;
+    width: 120px;
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+
+.menu .selected {
+    background-color: #f0f0f0;
+    border-top: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+
+.menu a:hover {
+    background-color: #ff8800;
+    border-top: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+
+.content {
+    display: table-cell;
+    vertical-align: top;
+    padding: 0px 30px;
+}
+
+.content a , .content a:hover , .content a:visited {
+    color: #0078ff;
+}
+
+.content dt {
+    font-weight: bold;
+}
+
+.content dd {
+    margin-bottom: 8px;
+}
+
+.smallprint {
+    font-size: 80%;
+    color: #808080;
+}
+
+.fluff {
+    background-color: #f0f0f0;
+    margin: 20px 0px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0px 2px 6px #aaaaaa;
+    -webkit-box-shadow: 0px 2px 6px #aaaaaa;
+    box-shadow: 0px 2px 6px #aaaaaa;
+}
+
+.fluffCaption {
+    background-color: #ffa640;
+    font-size: 85%;
+    padding: 4px 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.fluffDate {
+    float: right;
+}
+
+.fluffBody {
+    padding: 10px;
+    font-size: 115%;
+}
+
+.footer {
+    background-color: #e0e0e0;
+    font-size: 80%;
+    color: #808080;
+    padding: 10px 10px 10px 180px;
+}
+
+.footer a , .footer a:visited {
+    color: #6060c0;
+}

@@ -1,0 +1,25 @@
+<%@ page pageEncoding="utf-8" trimDirectiveWhitespaces="true" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<fmt:setBundle basename="messages"/>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="robots" content="all" />
+<link rel="stylesheet" type="text/css" href="<c:url value="/css/style.css"/>" />
+<title>fluffyfeedback.de</title>
+</head>
+<body>
+<div class="outside">
+<div class="logo">
+  <div class="logoTop">fluffyfeedback.de</div>
+  <div class="logoBottom">#flausch deinen Piraten!</div>
+  <div class="beta">&nbsp;</div>
+</div>
+<div class="frame"><div class="framecontent">
+<div class="menu"><ul>
+<li><a href="<c:url value="/fluffy/index.html"/>"<c:if test="${pageName eq 'index'}"> class="selected"</c:if>>Geflauscht</a></li>
+<li><a href="<c:url value="/fluffy/unfluffed.html"/>"<c:if test="${pageName eq 'unfluffed'}"> class="selected"</c:if>>Ungeflauscht</a></li>
+<li><a href="<c:url value="/fluffy/for/index.html"/>"<c:if test="${pageName eq 'person'}"> class="selected"</c:if>>Flauschbar</a></li>
+<li><a href="<c:url value="/faq.jsp"/>"<c:if test="${pageName eq 'faq'}"> class="selected"</c:if>>F.A.Q.</a></li>
+</ul></div>
+<div class="content">
